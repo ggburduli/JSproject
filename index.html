@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DG BLOG Welcome</title>
+</head>
+
+<style>
+
+body {
+  margin: 0;
+  background-color: #e9ebee;  
+  font-family: Arial, Helvetica, sans-serif;
+}
+    
+.topnav {
+  overflow: hidden;
+  margin-top: 0px;
+  background-color:  #bfc1c4;
+  width: 100%;
+  height: 8%;
+  /* position: fixed; */
+}
+
+.topnav a {
+  float: right;
+  color: #e63e3e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav-right{
+  margin-right: 3%;
+}
+
+
+.topnav-left {
+  float: left;
+  margin-left: 4%;
+}
+
+.topnav-left input{
+  border:none;
+  outline:none;
+  width: 200px;
+  height: 22px;
+}
+
+.topnav-left {
+  float: left;
+  margin-left: 1%;
+  margin-top: 0.5%;
+}
+
+.search {
+  margin-top: 1%;
+  margin-left: 3%;
+}
+
+.sinput input{
+  border:none;
+  outline:none;
+  width: 250px;
+  height: 22px;
+}
+
+.blogs{
+  width: 100%;
+  height: 500px;
+  background-color: aqua;
+}
+
+.about{
+  width: 100%;
+  height: 500px;
+  background-color: rgb(255, 0, 0);
+}
+
+.contact{
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0, 255, 13);
+}
+
+.left-side{
+  float: left;
+}
+
+.blogs h1{
+  margin: 0%;
+  color: black;
+  margin-left: 20%;
+}
+
+.signup{
+  float: right;
+  margin-right: 20%;
+}
+
+.signup aside{
+  background-color: white;
+  display: block;
+  width: 200px;
+  height: 280px;
+  margin-top: 20%
+}
+
+.signup aside b{
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 0;
+}
+
+p{
+  display: block;
+}
+
+p input{
+  padding: 4px 12px;
+  border: 1px solid #b2b2b2;
+}
+
+.signup_button{
+  font-weight: 600;
+  background-color: greenyellow;
+  border: 2px solid greenyellow;
+  padding: 8px 30px;
+  width: 100%;
+}
+
+.member{
+  text-align: center;
+  margin-top: 1em;
+}
+
+.about-header{
+  margin-top: 5%px;
+  text-align: center;
+}
+
+.magalta{
+  float: left;
+  text-align: color;
+}
+
+.guga{
+  float: right;
+  text-align: center;
+}
+
+.common{
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+  <div class="topnav">
+    
+    <div class="topnav-right">  
+      <div class = "signIn">
+        <a href="#homepage">SIGN IN</a>
+      </div>
+      <div class="aboutUs">
+        <a href="signIN.html">About Us</a>
+      </div> 
+      <div class="aboutUs">
+          <a href="signIN.html">Contact</a>
+      </div> 
+    </div>
+    
+    <div class="topnav-left">
+      <img src="images/unnamed.png"  width="30" height="30" border="2">
+    </div>
+    
+    <div class = "sinput">
+      <input name="search" class="search" placeholder=" Search Blogs" >
+    </div>
+
+  </div>
+
+  <div class="mainPage">
+    <div class="blogs">
+      <div class="welcome">
+        
+        <div class="left-side">
+          <h1 class="homeText">
+            <br>
+            Create your own blog!!!
+          </h1>
+        
+          <div class="quotaText">
+            <h1>Earn Money</h1>
+            <h3>Get paid for your work. Get money from Ads.</h3>
+          </div>
+        </div>
+        
+        <div class="signup">
+          <aside class="signupBox">
+            <b>Sign in and create your blog</b>
+            <p>
+              <input class="form-control" type="text" name="size" id="signup_name" placeholder="Username">
+            </p>
+
+            <p>
+              <input class="form-control" type="password" name="size" id="signup_password" placeholder="Password">
+            </p>
+
+            <button id="signup_submit" class="signup_button" type="submit">Sign Up</button>
+
+            <div class="member">
+              <p>
+                Already a member?
+                <a href="login.html">Login</a>
+              </p>
+              <a href="signUp.html">Forgot Password</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="about-header">
+        <h1>
+          About Us
+        </h1>
+      </div>
+
+      <div class="common">
+          <h1>
+            This is our final project in JS.
+          </h1>
+      </div>
+
+      <div class="magalta">
+        <img src="images/mg.jpg"  width="120" height="120" border="0">
+        <h3>Davit Magaltadze. Studnet of Mathematic and Computer Science faculty in Free University.</h3>
+      </div>
+
+      <div class="guga">
+          <img src="images/gg.jpg"  width="120" height="120" border="0">
+          <h3>Guga Burduli. Student of Electrical and Computer Engineering faculty in Free University.</h3>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h3>Email: <a href="#">gburd14@freeuni.edu.ge</a></h3>
+      <h3>Email: <a href="#">dmaga15@freeuni.edu.ge</a></h3>               
+    </div>
+  </div>   
+
+
+</body>
+</html>
