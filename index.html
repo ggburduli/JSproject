@@ -8,6 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DG BLOG Welcome</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 </head>
 
 <style>
@@ -163,11 +166,14 @@ p input{
 </style>
 </head>
 <body>
+<div id="app">
+  
   <div class="topnav">
     
     <div class="topnav-right">  
+      <router-link to="/blog">Go to Blog</router-link>
       <div class = "signIn">
-        <a href="#homepage">SIGN IN</a>
+          <router-link to="/">SIGN IN</router-link>
       </div>
       <div class="aboutUs">
         <a href="signIN.html">About Us</a>
@@ -186,9 +192,26 @@ p input{
     </div>
 
   </div>
-
-  <div class="mainPage">
-    <div class="blogs">
+  
+  <h1>Hello App!</h1>
+  <p>
+    <!-- use router-link component for navigation. -->
+    <!-- specify the link by passing the `to` prop. -->
+    <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
+  </p>
+  <!-- route outlet -->
+  <!-- component matched by the route will render here -->
+  <router-view></router-view>
+</div>
+<script type="text/x-template" id="blog-template">
+    <div>
+      <div class="post" v-for="post in posts">
+        <h4>{{ post.company }}</h4>
+      </div>
+    </div>
+</script>
+<script type="text/x-template" id="blogs-block-template">
+  <div class="blogs">
       <div class="welcome">
         
         <div class="left-side">
@@ -227,7 +250,8 @@ p input{
         </div>
       </div>
     </div>
-
+</script>
+  <div class="mainPage">
     <div class="about">
       <div class="about-header">
         <h1>
@@ -258,6 +282,12 @@ p input{
     </div>
   </div>   
 
+ 
+
+  
+
+
+  <script src="main.js"></script>
 
 </body>
 </html>
