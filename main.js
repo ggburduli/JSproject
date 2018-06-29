@@ -6,6 +6,7 @@
 const Homepage = Vue.component('Blogs', {
     template: '#blogs-block-template'
 });
+
 const Blog = Vue.component('Blog', {
     template: '#blog-template',
     data: function () {
@@ -19,6 +20,7 @@ const Blog = Vue.component('Blog', {
         });
     }
 });
+
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
@@ -61,4 +63,3 @@ document.addEventListener('DOMContentLoaded', function () {
    }) 
 });
 
- 

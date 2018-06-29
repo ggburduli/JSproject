@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    background-color: #e9ebee;  
+    font-family: Arial, Helvetica, sans-serif;
+  }
+      
+  .topnav {
+    overflow: hidden;
+    margin-top: 0px;
+    background-color:  #bfc1c4;
+    width: 100%;
+    height: 8%;
+    /* position: fixed; */
+  }
+  
+  .topnav a {
+    float: right;
+    color: #e63e3e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .topnav-right{
+    margin-right: 3%;
+  }
+  
+  
+  .topnav-left {
+    float: left;
+    margin-left: 4%;
+  }
+  
+  .topnav-left input{
+    border:none;
+    outline:none;
+    width: 200px;
+    height: 22px;
+  }
+  
+  .topnav-left {
+    float: left;
+    margin-left: 1%;
+    margin-top: 0.5%;
+  }
+  
+  .search {
+    margin-top: 1%;
+    margin-left: 3%;
+  }
+  
+  .sinput input{
+    border:none;
+    outline:none;
+    width: 250px;
+    height: 22px;
+  }
+  
+  .blogs{
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+  }
+  
+  .about{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 0, 0);
+  }
+  
+  .contact{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 255, 13);
+  }
+  
+  .left-side{
+    float: left;
+  }
+  
+  .blogs h1{
+    margin: 0%;
+    color: black;
+    margin-left: 20%;
+  }
+  
+  .signup{
+    float: right;
+    margin-right: 20%;
+  }
+  
+  .signup aside{
+    background-color: white;
+    display: block;
+    width: 200px;
+    height: 280px;
+    margin-top: 20%
+  }
+  
+  .signup aside b{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 0;
+  }
+  
+  p{
+    display: block;
+  }
+  
+  p input{
+    padding: 4px 12px;
+    border: 1px solid #b2b2b2;
+  }
+  
+  .signup_button{
+    font-weight: 600;
+    background-color: greenyellow;
+    border: 2px solid greenyellow;
+    padding: 8px 30px;
+    width: 100%;
+  }
+  
+  .member{
+    text-align: center;
+    margin-top: 1em;
+  }
+  
+  .about-header{
+    margin-top: 5%px;
+    text-align: center;
+  }
+  
+  .magalta{
+    float: left;
+    text-align: color;
+  }
+  
+  .guga{
+    float: right;
+    text-align: center;
+  }
+  
+  .common{
+    text-align: center;
+  }
+
+  /*============add===========*/
+  .nav-link {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    color: white;
+    background: #bfc1c4;
+  }
+  .nav-btn {
+      display: inline-block;
+      padding: 15px;
+  }
+  .logo {
+      width: 50px;
+      margin-left: 10px;
+      padding: 2px;
+      border: 2px solid;
+  }
+  .nav-search {
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 10px 15px;
+    margin-top: 2px;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+  .form-container {
+    margin: 50px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+  }
+  .form-header {
+      text-align: center;
+      margin-bottom: 40px;
+  }
+  .form-item {
+      max-width: 400px;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  .item-input {
+    width: 80%;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 2px;
+    border: 2px solid;
+  }
+  .item-submit {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+  }
+  .text-container {
+      margin: 50px;
+  }
+  .border-btm {
+      border-bottom: 2px solid;
+  }
+
+  .scroll-button{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    color: white;
+    background: #bfc1c4;
+  }
+
+  /* <!-- 
+  @media only screen and (max-width: 600px) {
+    .ragac-class {
+      width: 40px;
+    }
+  }
+  --> */
