@@ -45,3 +45,20 @@ const app = new Vue({
 }).$mount('#app')
 
 // Now the app has started!
+
+document.addEventListener('DOMContentLoaded', function () {
+   [].forEach.call(document.querySelectorAll('.scroll-button'), function(item) {
+       item.addEventListener('click', function (event) {
+           event.preventDefault();
+           const target = event.target.href.replace(location.origin + '/', '');
+           const el = document.querySelector(target);
+           window.scrollTo({
+            'behavior': 'smooth',
+            'left': 0,
+            'top': el.offsetTop
+           })
+       })
+   }) 
+});
+
+ 
