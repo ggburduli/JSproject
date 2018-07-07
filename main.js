@@ -15,7 +15,7 @@ const Blog = Vue.component('Blog', {
         }
     },
     mounted: function () {
-        axios.get('/posts.json').then(response => {
+        axios.get('/newposts.json').then(response => {
             this.posts = response.data;
         });
     }

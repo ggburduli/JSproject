@@ -32,7 +32,7 @@
           <router-link class="nav-link" to="/blog">Go to Blog</router-link>
         </div>
         <div class="nav-btn">
-          <router-link class="nav-link" to="/">SIGN IN</router-link>
+          <router-link class="nav-link" to="/">Home</router-link>
         </div>
         <div class="nav-btn">
           <a href="#about-us" class="scroll-button">About Us</a>
@@ -50,7 +50,8 @@
 <script type="text/x-template" id="blog-template">
     <div>
       <div class="post" v-for="post in posts">
-        <h4>{{ post.company }}</h4>
+        <h2>{{ post.title }}</h2>
+        <h4>{{ post.text }}</h4>
       </div>
     </div>
 </script>
@@ -144,8 +145,24 @@
     </div>
 
     <div class="contact" id="contact-us">
-      <h3>Email: <a href="#">gburd14@freeuni.edu.ge</a></h3>
-      <h3>Email: <a href="#">dmaga15@freeuni.edu.ge</a></h3>               
+      <h1>Contact Us</h1>
+        <div class="grid-row border-btm">
+            <div class="grid-col span-1-of-2">
+              <div class="contact-text">
+                <h3>Email: <a href="#">dmaga15@freeuni.edu.ge</a></h3> 
+                <h3>Mobile: <a href="#">+995 598608669</a></h3> 
+              </div>
+            </div>
+           
+            <div class="grid-col span-1-of-2">
+              <div class="contact-text">
+                <h3>Email: <a href="#">gburd14@freeuni.edu.ge</a></h3>
+                <h3>Mobile: <a href="#">+995 591708979</a></h3> 
+              </div>
+            </div>
+          </div>
+      
+                    
     </div>
   </div>   
 
