@@ -46,6 +46,18 @@ const app = new Vue({
   router
 }).$mount('#app')
 
+function addPostFunction(){
+	var obj = document.getElementById("txt-id").value;
+	document.getElementById("txt-id").value = "";
+	window.open("index.html", "_self");
+}
+
+function login(){
+	var username = document.getElementById("username1").value;
+	var pass = document.getElementById("password1").value;
+	window.open("http://172.16.1.36", "_self");
+}
+
 // Now the app has started!
 
 document.addEventListener('DOMContentLoaded', function () {

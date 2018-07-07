@@ -5,258 +5,67 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DG BLOG Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>DG BLOG Welcome</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <link href="style/grid.css" rel="stylesheet">
+    <link href="style//style.css" rel="stylesheet">
 </head>
 
-<style>
-
-body {
-  margin: 0;
-  background-color: #e9ebee;  
-  font-family: Arial, Helvetica, sans-serif;
-}
-    
-.topnav {
-  overflow: hidden;
-  margin-top: 0px;
-  background-color:  #bfc1c4;
-  width: 100%;
-  height: 8%;
-  /* position: fixed; */
-}
-
-.topnav a {
-  float: right;
-  color: #e63e3e;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 25px;
-}
-
-.topnav-right{
-  margin-right: 3%;
-}
-
-
-.topnav-left {
-  float: left;
-  margin-left: 4%;
-}
-
-.topnav-left input{
-  border:none;
-  outline:none;
-  width: 200px;
-  height: 22px;
-}
-
-.topnav-left {
-  float: left;
-  margin-left: 1%;
-  margin-top: 0.5%;
-}
-
-.search {
-  margin-top: 1%;
-  margin-left: 3%;
-}
-
-.sinput input{
-  border:none;
-  outline:none;
-  width: 250px;
-  height: 22px;
-}
-
-.blogs{
-  width: 100%;
-  height: 800px;
-  background-color: aqua;
-}
-
-.about{
-  width: 100%;
-  height: 500px;
-  background-color: rgb(255, 0, 0);
-}
-
-.contact{
-  width: 100%;
-  height: 100px;
-  background-color: rgb(0, 255, 13);
-}
-
-.navigation{
-    width: 20%;
-    height: 450px;
-    margin-right: 10px;
-    margin-top: 25px;
-    float: left;
-    border-collapse: collapse;
-}
-
-.blogs h1{
-  margin: 0%;
-  color: black;
-  margin-left: 20%;
-}
-
-
-
-
-.member{
-  text-align: center;
-  margin-top: 1em;
-}
-
-.about-header{
-  margin-top: 5%px;
-  text-align: center;
-}
-
-.magalta{
-  float: left;
-  text-align: color;
-}
-
-.guga{
-  float: right;
-  text-align: center;
-}
-
-.common{
-  text-align: center;
-}
-
-</style>
 </head>
 <body>
-  <div class="topnav">
-    
-    <div class="topnav-right">  
-      <div class = "signIn">
-        <a href="signIN.html">SIGN OUT</a>
+  <div>
+    <div class="grid-row border-btm">
+      <div class="grid-col span-1-of-2">
+          <div class="gird-row">
+            <div class="grid-col span-1-of-5">
+                <img src="images/unnamed.png"  class="logo">
+            </div>
+            <div class="grid-col span-4-of-5">
+                <input type="text" class="nav-search">
+            </div>
+          </div>
       </div>
-      <div class="aboutUs">
-        <a href="signIN.html">About Us</a>
-      </div> 
-      <div class="aboutUs">
-          <a href="signIN.html">Contact</a>
-      </div> 
+     
+      <div class="grid-col span-1-of-2">
+        <div class="nav-btn">
+          <router-link class="nav-link" to="/blog">Go to Blog</router-link>
+        </div>
+        <div class="nav-btn">
+          <router-link class="nav-link" to="/">SIGN IN</router-link>
+        </div>
+        <div class="nav-btn">
+          <a href="#about-us" class="scroll-button">About Us</a>
+        </div>
+        <div class="nav-btn">
+          <a href="#contact-us" class="scroll-button">Contact</a>
+        </div>
+      </div>
     </div>
-    
-    <div class="topnav-left">
-      <img src="images/unnamed.png"  width="30" height="30" border="2">
-    </div>
-    
-    <div class = "sinput">
-      <input name="search" class="search" placeholder=" Search Blogs" >
-    </div>
-
   </div>
 
-  <div class="mainPage">
-    <div class="blogs">
-        <div class="navigation">
+  <div>
+    <div>
+        <div>
                 <br><br>   
-                <div>
-                  <div class="user">
-                    <img src="images/photo.jpg"  width="20" height="20" border="0">  
-                    <span class="navtext">Guga Burduli </span>
-                  </div>
-                  
-                  <ul>       
-                    <div class="news-feed"></div>
-                    <p>News Feed</p>      
-              
-                    <div class="messenger"></div>
-                    <p>Messenger</p>
-                  </ul>
-                </div>
         </div>
 
-        <div class="posts">
-            <ul>
-                <li>
-                    <div class="post-header">
-                      <img src="images/messi.jpg">
-                      <div class="name-time">
-                        <p>Lionel Messi</p>
-                        <span>1 hrs</span>
-                      </div>
-                    </div>
-                    <div class="post-content">
-                      <p>Campeones!!!</p>
-                      <img src="images/barca.jpg" width="480" height="480" border="0">
-                    </div>
-                    <div class="post-footer">
-                      <div class="post-info">
-                        <div class="likes">
-                          <div class="like-icon">
-                          </div>
-                          <p>51K</p>
-                        </div>
-                        <div class="comments-shares">
-                          <p>29K Comments 3K Share</p>
-                        </div>
-                      </div>
-                      <div class="post-actions">
-                        <div>
-                          <div class="like">
-                          </div>
-                          <p>Like</p>
-                        </div>
-                        <div>
-                          <div class="comment">
-                          </div>
-                          <p>Comment</p>
-                        </div>
-                        <div>
-                          <div class="share">
-                          </div>
-                          <p>Share</p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-        
+        <div>
+			<textarea id="txt-id" class = "text-area" rows="24" cols="100" autofocus required placeholder="What's on your mind...? Tell world about it!"></textarea>
                   
-                </div>
-    </div>
-
-    <div class="about">
-      <div class="about-header">
-        <h1>
-          About Us
-        </h1>
-      </div>
-
-      <div class="common">
-          <h1>
-            This is our final project in JS.
-          </h1>
-      </div>
-
-      <div class="magalta">
-        <img src="images/unnamed.png"  width="30" height="30" border="2">
-        <h3>Davit Magaltadze. Studying Mathematic and Computer Science in Free University.</h3>
-      </div>
-
-      <div class="guga">
-          <img src="images/unnamed.png"  width="30" height="30" border="2">
-          <h3>Guga Burduli. Studying Electrical and Computer Engineering in Free University.</h3>
-      </div>
-    </div>
-
-    <div class="contact">
-      <h3>Email: <a href="#">gburd14@freeuni.edu.ge</a></h3>
-      <h3>Email: <a href="#">dmaga15@freeuni.edu.ge</a></h3>               
-    </div>
+        </div>
+		<div>
+		<button type="button" class = "button-click" onclick="addPostFunction()">Post!</button>
+		</div>
+		<div>
+		<p id = "27"></p>
+		</div>
   </div>   
 
-
+  <script src="main.js"></script>
 </body>
 </html>
