@@ -50,6 +50,19 @@ body {
     margin-left: 3%;
   }
 
+  .post{
+    background-color: black;
+  }
+
+  .post h2{
+    color: white;
+    text-align: center;
+  }
+
+  .post h4{
+    color:white;
+  }
+
   .about{
     width: 100%;
     height: 352px;
@@ -67,10 +80,24 @@ body {
   
   .contact{
     width: 100%;
-    height: 100px;
-    background-color: black;
+    height: 188px;
+    background-color:black;
+  }
+
+  .contact h1{
+    color: white;
+    text-align: center;
   }
   
+  .contact-text{
+    color: red;
+    float: left;
+  }
+
+  .contact-text h3 a{
+    color: white;
+  }
+
   .left-side{
     float: left;
   }
