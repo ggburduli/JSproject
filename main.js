@@ -55,7 +55,7 @@ function addPostFunction(){
 function login(){
 	var username = document.getElementById("username1").value;
 	var pass = document.getElementById("password1").value;
-	window.open("http://172.16.1.36", "_self");
+	window.open("http://172.16.0.164:8080/homepage.html", "_self");
 }
 
 // Now the app has started!
